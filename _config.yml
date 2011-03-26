@@ -1,0 +1,14 @@
+safe:        false
+auto:        false
+server:      false
+server_port: 4000
+
+source:      .
+destination: ~/www/cosmic-cup
+plugins:     ./_plugins
+
+future:      true
+lsi:         false
+pygments:    false
+permalink:   date
+
