@@ -7,10 +7,12 @@
 body {
      background: #cccccc;
 }
+
 #top {
+    display: block;
     background: #ff0000;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#990000));
     background: -moz-linear-gradient(top,  #ff0000,  #990000);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#990000));
     height: 110px;
     padding: 1em 0 0 0;
     font-family: "Droid Sans";
@@ -33,10 +35,10 @@ body {
 
 #top img {
     float: left;
-    margin: 0;
     }
 
 #content {
+    display: block;
     background: #666666;
     background: -webkit-gradient(linear, left top, left bottom, from(#666666), to(#333333));
     background: -moz-linear-gradient(top,  #666666,  #333333);
@@ -67,9 +69,12 @@ body {
     height: 30%;
     width: 30%;
     box-shadow: 0px 5px 5px #666666;
+    -moz-box-shadow: 0px 5px 5px #666666;
+    -webkit-box-shadow: 0px 5px 5px #666666;
 }
 
 nav {
+    display: block;
     margin: 2em auto 2em auto;
     width: 90%;
     }
