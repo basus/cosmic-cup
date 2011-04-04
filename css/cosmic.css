@@ -13,6 +13,9 @@ body {
     background: #ff0000;
     background: -moz-linear-gradient(top,  #ff0000,  #990000);
     background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#990000));
+    box-shadow: 0px 3px 5px #333333;
+    -moz-box-shadow: 0px 3px 5px #333333;
+	-webkit-box-shadow: 0px 3px 4px #333333;
     height: 110px;
     padding: 1em 0 0 0;
     font-family: "Droid Sans";
@@ -42,6 +45,9 @@ body {
     background: #666666;
     background: -webkit-gradient(linear, left top, left bottom, from(#666666), to(#333333));
     background: -moz-linear-gradient(top,  #666666,  #333333);
+    box-shadow: 0px 3px 5px #666666;
+    -moz-box-shadow: 0px 3px 5px #666666;
+	-webkit-box-shadow: 0px 3px 4px #666666;
     font-family: "Droid Serif";
     color: #ffffff;
     padding: 2em 10% 2em 5%;
@@ -75,15 +81,15 @@ body {
 
 nav {
     display: block;
-    margin: 2em auto 2em auto;
+    margin: 2em auto 0.5em auto;
     width: 90%;
+    overflow: auto;
     }
 
 .callout {
     width: 24%;
-    display: inline;
-    position: relative;
     float: left;
+    position: relative;
     margin: 0 0 2em 0;
     border-left: 2px solid #666666;
     }
@@ -97,8 +103,47 @@ nav {
     }
 
 .callout p {
-    margin: 1em 5% 1em 5%;
+    margin: 1em 5% 0em 5%;
     line-height: 1.2em;
     font-family: "Droid Serif";
+    text-align: justify;
     text-shadow: 0px 2px 3px #eeeeee;
+}
+
+#location {
+    width: 40%;
+    margin: 0.5em auto 0.5em auto;
+    padding: 2em 0 2em 0;
+    font-family: "Droid Serif";
+    border-radius: 2em;
+    text-align: center;
+    background: #990000;
+    background: -moz-linear-gradient(top,  #cc0000,  #990000);
+    background: -webkit-gradient(linear, left top, left bottom, from(#cc0000), to(#990000));
+    box-shadow: 0px -2px 3px #999999;
+    -moz-box-shadow: px -2px 3px #999999;
+	-webkit-box-shadow: 0px px 3px #999999;
+}
+
+#location address {
+    display: block;
+    margin-top:1em;
+    margin-bottom: 2em;
+    font-weight: bold;
+    text-shadow: 0px 2px 3px #ff0000;
+}
+
+#location p {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Kreon";
+    font-size: 170%;
+    text-shadow: 0px 2px 3px #ff0000;
+}
+
+
+#location li {
+    list-style-type: none;
+    font-weight: bold;
+    text-shadow: 0px 2px 3px #cc0000;
 }
